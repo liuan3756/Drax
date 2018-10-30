@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="#554499" />
+
+    <TextView
+        android:id="@+id/tvVisitorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="访客1"
+        android:textSize="14sp" />
+
+</LinearLayout>

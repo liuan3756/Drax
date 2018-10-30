@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1874CD"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llVipDisplayWrapper"
+        android:layout_width="520dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="#88ffffff"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llVipDisplayContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#BF3EFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvVipDisplayHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8470FF"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="10dp"
+            android:text="欢迎贵宾到访！"
+            android:textColor="#FFD700"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <drax.liuan.com.drax.view.StaffClockInView
+        android:id="@+id/staffClockInView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewVisitor"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:background="#66666666"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSpread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收起" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加1个" />
+
+        <Button
+            android:id="@+id/btnAdd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加2个" />
+
+        <Button
+            android:id="@+id/btnAdd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加3个" />
+
+        <Button
+            android:id="@+id/btnAdd4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加4个" />
+
+        <Button
+            android:id="@+id/btnSpreadVisitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开访客" />
+
+        <Button
+            android:id="@+id/btnCloseVisitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收起访客" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button" />
+
+        <Button
+            android:id="@+id/btnAddVisitor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="addv1" />
+
+        <Button
+            android:id="@+id/btnAddVisitor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="addv2" />
+
+        <Button
+            android:id="@+id/btnAddVisitor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="addv3" />
+
+        <Button
+            android:id="@+id/btnAddVisitor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="addv5" />
+    </LinearLayout>
+
+
+</RelativeLayout>

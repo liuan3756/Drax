@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#AAAAAA"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_item_person_display_head"
+            android:layout_width="180dp"
+            android:layout_height="250dp" />
+
+        <TextView
+
+            android:id="@+id/tv_item_person_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+
+            tools:text="123123" />
+
+
+        <TextView
+
+            android:id="@+id/tv_item_person_display_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            tools:text="123123" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_item_person_display_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:src="@mipmap/ic_person_display_check" />
+</RelativeLayout>
